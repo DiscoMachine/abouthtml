@@ -1,0 +1,135 @@
+.unordered {
+background: #7eb121;
+padding: 20px;
+width: 30%;
+font-family: Arial, Helvetica, sans-serif;
+}
+    
+.unordered li {
+background: #d6ff67;
+margin: 5px;
+}
+    
+.nested-ul li {
+background: #c4e49e;
+margin: 5px;    
+}
+
+.ordered {
+background: #0986cf;
+padding: 20px;
+width: 20%;
+font-family: 'consolas';
+font-size: 1.3em;
+}
+    
+.ordered li {
+background: #7f8fec;
+padding: 5px;
+margin-left: 20px;
+}
+
+.custom-box-list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.custom-box-list li {
+counter-increment: step-counter;
+margin-bottom: 10px;
+}
+
+.custom-box-list li::before {
+content: counter(step-counter);
+margin-right: 5px;
+font-size: 80%;
+background-color: rgb(255, 48, 220);
+color: rgb(0, 0, 0);
+font-weight: bold;
+padding: 3px 8px;
+border-radius: 3px;
+}
+
+.list-image {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-image li {
+position: relative;
+padding-left: 30px;
+line-height: 170%;
+}
+
+.list-image li:before {
+content: '';
+width: 20px;
+height: 20px;
+position: absolute;
+background-image: url('palm-tree.png');
+background-size: cover;
+background-position: center;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.games {
+    list-style: none;
+    padding-left: 0;
+}
+
+.games li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 300%;
+}
+
+.games li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('games.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table, td, th { 
+    border: 1px solid black; 
+    border-collapse: collapse;
+}		 
+
+td, th {
+    padding: 15px;
+    text-align: center;
+}
+
+caption {
+    caption-side: top; 
+    text-align: center; 
+    font-style: italic; 
+    font-weight: bold; 
+    color: greenyellow; 
+}
+
+.table-simple th {
+    background-color: black; 
+    color: white;   
+} 
+
+  .table-simple tr:nth-child(even) { 
+    background-color: teal;   
+} 
+
+  .table-simple tr:nth-child(odd) { 
+    background-color: coral; 
+} 
+ 
+  .table-simple tr:hover { 
+    background-color: #acffe3; 
+}
